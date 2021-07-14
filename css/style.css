@@ -1,4 +1,5 @@
 @import "vars.css";
+@import "mac.css";
 
 body {
   background-color: black;
@@ -27,3 +28,31 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+body {
+  cursor: var(--cursor-dark);
+}
+
+[cursor]:hover {
+  cursor: var(--cursor-dark-hover);
+}
+
+bg-white [cursor] {
+  cursor: var(--cursor);
+}
+bg-white [cursor]:hover {
+  cursor: var(--cursor-hover);
+}
+bg-white {
+  background: white;
+  display: flex;
+  cursor: var(--cursor);
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+bg-black {
+  background: black;
+  display: flex;
+  position: relative;
+}
