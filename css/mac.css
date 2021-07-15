@@ -36,3 +36,17 @@ css-case {
   top: var(--base);
   z-index: 1;
 }
+
+css-inside {
+  position: sticky;
+  top: calc(var(--base) - 8vmin);
+  margin-bottom: -6vmin;
+}
+
+css-pro :is(css-inside, css-case, css-title) {
+  position: sticky;
+}
+
+section {
+  height: 400vh;
+}
